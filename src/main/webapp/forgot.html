@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="ISO-8859-1">
+    <title>Insert title here</title>
+</head>
+
+<body>
+    <fieldset style="width: 1000px;" method>
+        <legend>
+            <h1>Forgot password</h1>
+        </legend>
+        <form action="" method="post">
+            <table>
+                <tr>
+                    <td><label for="email"><h3>Email :</h3></label></td>
+                    <td><input type="email" name="email" id="email" placeholder="Enter email"></td>
+                </tr>
+                <tr>
+                    <td><label for="dob"><h3>DOB :</h3></label></td>
+                    <td><input type="date" name="dob" id="dob"></td>
+                </tr>
+                <tr>
+                    <td><label for="phno"><h3>Mobile :</h3></label></td>
+                    <td><input type="tel" name="phno" id="phno" pattern="[0-9],{10}" placeholder="Enter mobile number"></td>
+                </tr>
+                <tr>
+                    <td><label for="lan"><h3>Country :</h3></label></td>
+                    <td><select name="lan" id="quali" required>
+                            <option value="lan">SELECT</option>
+                            <option value="india">INDIA</option>
+                            <option value="unitedstates">UNITED STATES</option>
+                            <option value="china">CHINA</option>
+                        </select></td>
+                </tr>
+                <tr>
+                    <td><label for="pass"><h3>New password :</h3></label></td>
+                    <td><input type="password" name="pass" id="pass" placeholder="Enter password"></td>
+                </tr>
+
+
+            </table>
+
+        </form>
+    </fieldset>
+</body>
+
+</html>

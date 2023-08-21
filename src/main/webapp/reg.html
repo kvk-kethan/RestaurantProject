@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="ISO-8859-1">
+    <title>Insert title here</title>
+</head>
+
+<body>
+    <fieldset style="width: 1000px;" method>
+        <legend>
+            <h1>Register</h1>
+        </legend>
+        <form action="signup" method="post" enctype="multipart/form-data">
+            <table>
+                <tr>
+                    <td><label for="user">
+                            <h3>User Name :</h3>
+                        </label></td>
+                    <td><input type="text" name="user" id="First" placeholder="Enter Username" ></td>
+                </tr>
+                <tr>
+                    <td><label for="pass">
+                            <h3>password :</h3>
+                        </label></td>
+                    <td><input type="password" name="pass" id="pass" placeholder="Enter password"></td>
+                </tr>
+
+                <tr>
+                    <td><label for="email">
+                            <h3>Email id :</h3>
+                        </label></td>
+                    <td><input type="email" name="email" id="email" placeholder="Enter Email ID"></td>
+                </tr>
+                <tr>
+                    <td><label for="phno">
+                            <h3>Phone Number :</h3>
+                        </label></td>
+                    <td><input type="tel" pattern="[0-9]{10}" name="phno" id="phno" placeholder="Enter phonenumber" required></td>
+
+
+                </tr>
+                <tr>
+                    <td><label for="dob">
+                            <h3>DOB :</h3>
+                        </label></td>
+                    <td><input type="date" name="dob" id="dob"></td>
+                </tr>
+                <tr>
+                    <td><label for="gender">
+                            <h3>Gender :</h3>
+                        </label></td>
+                    <td>Male<input type="radio" name="gender" id="gender" value="male">Female<input type="radio" name="gender" id="gender" value="female">Other<input type="radio" name="gender" id="gender" value="other"></td>
+
+                </tr>
+                <tr>
+                    <td><label for="pic">
+                            <h3>Image :</h3>
+                        </label></td>
+                    <td><input type="file" value="Upload Image" name="picture"></td>
+                </tr>
+                <tr>
+                    <td><label for="lan">
+                            <h3>Country :</h3>
+                        </label></td>
+                    <td> <select name="country">
+
+                            <option>India</option>
+                            <option>United States</option>
+                            <option>China</option>
+                        </select></td>
+                </tr>
+
+
+
+                <tr>
+                    <td>
+
+                        <input type="submit" value="Submit"> <input type="button" value="cancel" required>
+                    </td>
+
+                </tr>
+
+            </table>
+            
+
+        </form>
+    </fieldset>
+    <a href="Home.html"><button type="button">Home</button></a>
+
+    
+    
+</body>
+
+</html>
