@@ -9,6 +9,7 @@ import javax.persistence.Persistence;
 
 
 import Dto.Customer;
+import Dto.Items;
 
 public class MyDao {
 	EntityManagerFactory e = Persistence.createEntityManagerFactory("dev");
@@ -18,6 +19,11 @@ public class MyDao {
 	public void save(Customer cust) {
 		t.begin();
 		m.persist(cust);
+		t.commit();
+	}
+	public void item(Items items) {
+		t.begin();
+		m.persist(items);
 		t.commit();
 	}
 
