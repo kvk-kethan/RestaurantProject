@@ -31,5 +31,6 @@ public class AddItem extends HttpServlet {
 		MyDao dao = new MyDao();
 		dao.item(items);
 		resp.getWriter().print("<h1 style='color:green'>Added Successfully</h1>");
+		req.getRequestDispatcher("AdminHome.html").include(req, resp);
 	}
 }
