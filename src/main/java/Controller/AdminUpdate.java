@@ -45,7 +45,7 @@ public class AdminUpdate extends HttpServlet {
 		items.setPicture(picture);
 		dao.update(items);
 		
-		resp.getWriter().print("<h1 style='color:green'>Data Deleted Successfully</h1>");
+		resp.getWriter().print("<h1 style='color:green'>Data Updated Successfully</h1>");
 		req.getRequestDispatcher("viewmenu").include(req, resp);
 		
 	}
