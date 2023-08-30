@@ -10,7 +10,7 @@
 </head>
 <body>
 <%Items item=(Items)request.getAttribute("item"); %>
-<form action="" method="post" enctype="multipart/form-data">
+<form action="update" method="post" enctype="multipart/form-data">
 	<input type="number" name="id" value="<%=item.getItem_id()%>" hidden=""><br>
     Name:<input type="text" name="name" value="<%=item.getItem_name()%>"><br>
     Price:<input type="number" name="price" value="<%=item.getItem_price()%>"><br>

@@ -64,6 +64,12 @@ public class MyDao {
 		t.commit();
 		
 	}
+	public void update(Items item) {
+		t.begin();
+		m.merge(item);
+		t.commit();
+		
+	}
 	
 
 }
